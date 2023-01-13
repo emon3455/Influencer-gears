@@ -31,9 +31,21 @@ body{
 }
 
 .icon{
-    color: #ffff;
-    font-size: 1.1rem;
+    color: #cac6c6;
+    font-size: 1rem;
 }
+
+.star{
+    color: #ffd35a;
+    font-size: 1rem;
+}
+
+.section-header{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
 /*----------------------------
  common style end 
  ----------------------------*/
@@ -46,8 +58,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aliceblue;
-    opacity: 0.8;
+    background-color: #e3f0fc;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -109,12 +120,88 @@ body{
     background-size: 70%;
     background-position: 50% 0%;
 }
-
 /* ----------header end-------------- */
 
+/*----------------------------- 
+    main section start
+----------------------------- */
+.main{
+    max-width: 1125px;
+    margin: 0 auto;
+}
+
+/* band start */
+.brad-container img{
+    margin: 0 0.8rem;
+}
+
+.brands{
+    margin: 1rem;
+    background-color: linear-gradient(90deg, #c0ccda1a 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+    border-top: 1px solid #e2e1e1;
+    border-bottom: 1px solid #e4e1e1;
+
+}
+
+.brad-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 1rem 0rem;
+}
+/* band end */
+
+/* ================ popular collection start============= */
+
+.popular-collection{
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.collections-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.collection{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(146, 146, 146, 0.219);
+}
+
+.collection-thumbnail{
+    width: 100%;
+}
+.collection-thumbnail  img{
+    width: 100%;
+}
+.collection-info{
+    width: 60%;
+}
+.see-more{
+    color: #E02C6D;
+    text-align: right;
+    margin: 0.5rem 0;
+}
+.icn-red{
+    color: #E02C6D;
+}
+/* ================ popular collection end============= */
 
 
 
+
+
+/*----------------------------- 
+    main section end
+----------------------------- */
 
 
 /* -----------------------------
@@ -176,6 +263,21 @@ body{
     }
     /* header end */
 
+    /* brand start */
+    .brands{
+        border: none;
+    }
+    /* brand end */
+
+    /* popular collection start */
+    .collections-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.5rem;
+    }
+    /* popular collection end */
+
+    
+
 }
 
 
@@ -233,6 +335,15 @@ body{
         background-position: 50% 20%;
     }
     /* header end */
+
+    /* popular collection start */
+    .collections-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    /* popular collection end */
+
+
 
 
 }
