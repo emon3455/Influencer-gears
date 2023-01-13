@@ -48,6 +48,9 @@ body{
     margin: 2rem 0;
 }
 
+.icn-red{
+    color: #E02C6D;
+}
 /*----------------------------
  common style end 
  ----------------------------*/
@@ -191,9 +194,6 @@ body{
     color: #E02C6D;
     text-align: right;
     margin: 1rem 0;
-}
-.icn-red{
-    color: #E02C6D;
 }
 /* ================ popular collection end============= */
 
