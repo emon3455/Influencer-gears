@@ -11,7 +11,9 @@
     font-family: 'Poppins', sans-serif;
     color: #3A3A3A;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     max-width: 1248px;
     margin: 0 auto;
@@ -31,7 +33,7 @@ body{
 }
 
 .icon{
-    color: #cac6c6;
+    color: #e7e1e1;
     font-size: 1rem;
 }
 
@@ -188,7 +190,7 @@ body{
 .see-more{
     color: #E02C6D;
     text-align: right;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
 }
 .icn-red{
     color: #E02C6D;
@@ -226,11 +228,47 @@ body{
 /* ---feacher product end------ */
 
 
-
-
 /*----------------------------- 
     main section end
 ----------------------------- */
+
+
+/* ----------------- footer start ---------------- */
+
+.footer{
+    max-width: 1248px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    width: 40%;
+    margin: 0 auto;
+}
+.footer-title{
+    font-size: 1.5rem;
+}
+.footer-container > * {
+    color: white;
+}
+
+.footer-icons > *  {
+    margin: 0.2rem;
+    padding: 1rem;
+    background-color: #131127;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    color: white;
+}
+
+/* ----------------- footer end ---------------- */
+
+
 
 
 /* -----------------------------
@@ -319,6 +357,12 @@ body{
     }
     /* feacher product end */
 
+    /* footer start */
+    .footer-container{
+        width: 100%;
+    }
+    /* footer end */
+
 }
 
 
@@ -398,6 +442,11 @@ body{
     }
     /* feacher product end */
 
+    /* footer start */
+    .footer-container{
+        width: 50%;
+    }
+    /* footer end */
 
 }
 
