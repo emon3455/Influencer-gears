@@ -9,15 +9,31 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
 }
 
 body{
     max-width: 1248px;
     margin: 0 auto;
-    background-color: #ebeaea;
+    background-color: #faf9f9;
 }
 
+.btn{
+    padding: 0.8rem 1rem;
+    background-color: #E02C6D;
+    font-size: 1.1rem;
+    border: none;
+    color: #ffff;
+}
 
+.btn-primary{
+    border-radius: 30px;
+}
+
+.icon{
+    color: #ffff;
+    font-size: 1.1rem;
+}
 /*----------------------------
  common style end 
  ----------------------------*/
@@ -50,11 +66,51 @@ body{
 .nav-list-item{
     text-decoration: none;
     font-size: 1.2rem;
-    color: black;
 }
 /* ---------Navigation end ------------ */
 
 
+/* ----------header start-------------- */
+
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 90vh;
+    padding-left: 0.8rem;
+}
+
+.header-info{
+    width: 50%;
+    max-height: 100%;
+}
+
+.header-title{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header-description{
+    margin-bottom: 1rem;
+}
+.header-banner{
+    width: 50%;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.header-banner img{
+    max-width: 70%;
+}
+
+.header-banner{
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 50% 0%;
+}
+
+/* ----------header end-------------- */
 
 
 
@@ -66,6 +122,11 @@ body{
 ------------------------------- */
 
 @media screen and ( max-width: 576px ) {
+
+    .btn{
+        font-size: 1rem;
+    }
+
     /* navigation start */
     .navigation{
         padding-left: 0.2rem;
@@ -84,12 +145,46 @@ body{
     }
     /* navigation end */
 
-
+    /* header start */
+    .header-container{
+        flex-direction: column-reverse;
+        gap: 0rem;
+        height: auto;
+    }
+    .header-info{
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+    .header-title{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .header-banner{
+        width: 100%;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+    .header-banner img{
+        max-width: 65%;
+    }
+    .header-banner{
+        background-size: 65%;
+        background-position: 50% 20%;
+    }
+    /* header end */
 
 }
 
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
+
+    .btn{
+        font-size: 1.1rem;
+    }
+
     /* navigation start */
     .nav-title{
         font-size: 1.2rem;
@@ -102,6 +197,44 @@ body{
         font-size: 1rem;
     }
     /* navigation end */
+
+
+    /* header start */
+    .header-container{
+        flex-direction: column-reverse;
+        gap: 1rem;
+        height: auto;
+    }
+
+    .header-info{
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+    .header-title{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .header-description{
+        font-size: 1.5rem;
+    }
+
+    .header-banner{
+        width: 90%;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .header-banner img{
+        max-width: 55%;
+    }
+    .header-banner{
+        background-size: 52%;
+        background-position: 50% 20%;
+    }
+    /* header end */
+
+
 }
 
 /* -----------------------------
