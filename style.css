@@ -1,0 +1,109 @@
+/*------------------------
+ common style start
+ -------------------------*/
+/* goggle font style */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    max-width: 1248px;
+    margin: 0 auto;
+    background-color: #ebeaea;
+}
+
+
+/*----------------------------
+ common style end 
+ ----------------------------*/
+
+
+/* ---------Navigation start ------------ */
+.navigation{
+    height: 10vh;
+    padding-left: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    opacity: 0.8;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list-item{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+/* ---------Navigation end ------------ */
+
+
+
+
+
+
+
+
+/* -----------------------------
+    Responsive Design start
+------------------------------- */
+
+@media screen and ( max-width: 576px ) {
+    /* navigation start */
+    .navigation{
+        padding-left: 0.2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-title{
+        font-size: 1.1rem;
+    }
+    .navbar{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .nav-list-item{ 
+        font-size: 0.8rem;
+    }
+    /* navigation end */
+
+
+
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    /* navigation start */
+    .nav-title{
+        font-size: 1.2rem;
+    }
+    .navbar{
+        width: 60%;
+        justify-content: space-evenly;
+    }
+    .nav-list-item{ 
+        font-size: 1rem;
+    }
+    /* navigation end */
+}
+
+/* -----------------------------
+    Responsive Design end
+------------------------------- */
