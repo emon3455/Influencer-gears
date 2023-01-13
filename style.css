@@ -196,6 +196,35 @@ body{
 /* ================ popular collection end============= */
 
 
+/* ---feacher product start------ */
+
+.feacher-product-container{
+    display: flex;
+    gap: 3rem;
+    margin: 3rem 1rem;
+}
+.feacher-banner{
+    width: 40%;
+}
+.feacher-banner img{
+    width: 100%;
+}
+.feacher-info{
+    width: 60%;
+}
+.feacher-product-title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.feacher-product-description{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #525252;
+    margin: 1rem 0;
+}
+/* ---feacher product end------ */
+
 
 
 
@@ -211,7 +240,7 @@ body{
 @media screen and ( max-width: 576px ) {
 
     .btn{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     /* navigation start */
@@ -276,7 +305,19 @@ body{
     }
     /* popular collection end */
 
-    
+    /* feacher product start */
+    .feacher-product-container{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1rem;
+    }
+    .feacher-banner{
+        width: 100%;
+    }
+    .feacher-info{
+        width: 100%;
+    }
+    /* feacher product end */
 
 }
 
@@ -284,7 +325,7 @@ body{
 @media screen and (min-width: 577px) and (max-width: 992px) {
 
     .btn{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     /* navigation start */
@@ -343,7 +384,19 @@ body{
     }
     /* popular collection end */
 
-
+    /* feacher product start */
+    .feacher-banner img{
+        margin-top: 1.5rem;
+    }
+    .feacher-product-title{
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .feacher-product-description{
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+    /* feacher product end */
 
 
 }
